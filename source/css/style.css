@@ -10654,8 +10654,31 @@ body {
 
 /* style */
 body {
+  text-align: center;
   /* login */
   /* main */
+}
+
+body .container {
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  vertical-align: top;
+  padding: 0 0.71429rem;
+}
+
+@media only screen and (min-width: 1200px) {
+  body .container {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    width: 1200px;
+    height: 100%;
+    padding: 0;
+  }
 }
 
 body.cmsLogin {
@@ -10714,6 +10737,7 @@ body.cmsMain {
 }
 
 body.cmsMain header {
+  text-align: center;
   position: absolute;
   overflow: hidden;
   left: 0;
@@ -10721,7 +10745,7 @@ body.cmsMain header {
   top: 0;
   height: 3.57143rem;
   line-height: 3.57143rem;
-  padding: 0 0 0 4.28571rem;
+  padding: 0 0 0 0;
   background: #005de1;
 }
 
@@ -10818,7 +10842,7 @@ body.cmsMain header button.menu i.bar:last-of-type {
 body.cmsMain header h1 {
   position: relative;
   display: inline-block;
-  margin: 0;
+  margin: 0 0 0 52px;
   padding: 0;
   font-size: 1.14286rem;
   line-height: inherit;
@@ -10829,7 +10853,7 @@ body.cmsMain header h1 {
     font-size: 22px;
     font-weight: 800;
     margin: 0;
-    padding: 0 20px;
+    padding: 0 0;
   }
   body.cmsMain header h1::before {
     content: "";
@@ -10989,6 +11013,7 @@ body.cmsMain div#content {
 body.cmsMain div#content h2.sTitle {
   margin: 0;
   padding: 0 0.71429rem;
+  text-align: left;
   font-size: 1.42857rem;
   color: #495057;
   font-weight: 800;
@@ -11012,8 +11037,8 @@ body.cmsMain div#content h2.sTitle i {
 @media only screen and (min-width: 1200px) {
   body.cmsMain div#content nav.navigation {
     position: absolute;
-    right: 20px;
-    top: 30px;
+    right: 0;
+    top: 10px;
   }
 }
 
@@ -11136,6 +11161,189 @@ body.cmsMain div#content div.contentsArea .widget.weather div.big {
 
 body.cmsMain div#content div.contentsArea .widget.weather div.big i {
   font-size: 4.28571rem;
+}
+
+body.cmsMain div#content div.contentsArea .bnWidget {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  background: #6c757d;
+  font-size: 0;
+  margin: 0 0 1.42857rem;
+  padding: 0;
+  color: #fff;
+}
+
+body.cmsMain div#content div.contentsArea .bnWidget h4.widgetTitle {
+  position: relative;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0.71429rem;
+  background: rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+  font-weight: 600;
+}
+
+@media only screen and (min-width: 1200px) {
+  body.cmsMain div#content div.contentsArea .bnWidget h4.widgetTitle {
+    width: 60%;
+    font-size: 16px;
+    margin: 0;
+    padding: 14px 10px;
+  }
+}
+
+body.cmsMain div#content div.contentsArea .bnWidget h4.widgetTitle small {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: block;
+  text-align: right;
+  padding: 1.07143rem;
+}
+
+body.cmsMain div#content div.contentsArea .bnWidget div.conLeft {
+  font-size: 1rem;
+  width: 100%;
+}
+
+@media only screen and (min-width: 1200px) {
+  body.cmsMain div#content div.contentsArea .bnWidget div.conLeft {
+    display: inline-block;
+    vertical-align: top;
+    width: 60%;
+    min-height: 203px;
+  }
+}
+
+body.cmsMain div#content div.contentsArea .bnWidget div.conLeft div.chart {
+  min-height: 10rem;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+body.cmsMain div#content div.contentsArea .bnWidget div.conLeft ul {
+  list-style: none;
+  margin: 0;
+  padding: 0.71429rem;
+  font-size: 0;
+}
+
+body.cmsMain div#content div.contentsArea .bnWidget div.conLeft ul li {
+  display: inline-block;
+  width: 50%;
+  font-size: 1rem;
+}
+
+body.cmsMain div#content div.contentsArea .bnWidget div.conRight {
+  position: relative;
+  font-size: 1rem;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (min-width: 1200px) {
+  body.cmsMain div#content div.contentsArea .bnWidget div.conRight {
+    display: inline-block;
+    vertical-align: top;
+    background: rgba(0, 0, 0, 0.6);
+    width: 40%;
+    min-height: 203px;
+  }
+}
+
+body.cmsMain div#content div.contentsArea .bnWidget div.conRight h5 {
+  background: rgba(0, 0, 0, 0.1);
+  margin: 0;
+  padding: 0.71429rem;
+  font-size: 1rem;
+}
+
+@media only screen and (min-width: 1200px) {
+  body.cmsMain div#content div.contentsArea .bnWidget div.conRight h5 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -48px;
+    line-height: 28px;
+    background: rgba(0, 0, 0, 0.4);
+  }
+}
+
+body.cmsMain div#content div.contentsArea .bnWidget div.conRight table {
+  width: 100%;
+}
+
+body.cmsMain div#content div.contentsArea .bnWidget div.conRight table th {
+  text-align: center;
+  margin: 0;
+  padding: 0.71429rem;
+  background: #000;
+}
+
+body.cmsMain div#content div.contentsArea .bnWidget div.conRight table td {
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+body.cmsMain div#content div.contentsArea .bnWidget div.conRight table td a {
+  display: inline-block;
+  margin: 0.35714rem;
+  padding: 0.71429rem;
+  border-radius: 0.42857rem;
+  background: #000;
+  color: #fff;
+}
+
+body.cmsMain div#content div.contentsArea .bnWidget div.conRight table td a.normal {
+  background: #005de1;
+}
+
+body.cmsMain div#content div.contentsArea .bnWidget div.conRight table td a.warning {
+  background: #ffc107;
+  color: #000;
+}
+
+body.cmsMain div#content div.contentsArea .bnWidget div.conRight table td a.danger {
+  background: #dc3545;
+}
+
+body.cmsMain div#content div.contentsArea .bnConsole {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  background: #000;
+  margin: 0 0 1.42857rem;
+  padding: 0.71429rem 0.71429rem 0.35714rem;
+  color: #fff;
+  height: 7.14286rem;
+  overflow-y: scroll;
+}
+
+body.cmsMain div#content div.contentsArea .bnConsole::-webkit-scrollbar {
+  width: 1.14286rem;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+body.cmsMain div#content div.contentsArea .bnConsole::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+body.cmsMain div#content div.contentsArea .bnConsole p {
+  margin: 0 0 0.35714rem;
+  padding: 0;
+  color: #999;
+}
+
+body.cmsMain div#content div.contentsArea .bnConsole p.warning {
+  color: #ffc107;
+}
+
+body.cmsMain div#content div.contentsArea .bnConsole p.danger {
+  color: #dc3545;
 }
 
 body.cmsMain div#content div.contentsArea .search {

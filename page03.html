@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>태양광발전 모니터링 시스템</title>
+        <link rel="stylesheet" type="text/css" href="source/css/style.css"/>
+        <link rel="stylesheet" type="text/css" href="source/css/xeicon.css"/>
+
+        <!-- javaScript -->
+
+        <script src="source/js/jquery-3.3.1.slim.min.js"></script>
+        <script src="source/js/popper.min.js"></script>
+        <script src="source/js/bootstrap.min.js"></script>
+
+        <script src="source/js/common.js"></script>
+
+    </head>
+
+    <body class="cmsMain">
+        <!-- S:skip_navi -->
+        <div class="skip_navi">
+            <a class="sr-only sr-only-focusable" href="#header">메뉴 바로가기</a>
+            <a class="sr-only sr-only-focusable" href="#content">본문 바로가기</a>
+            <a class="sr-only sr-only-focusable" href="#footer">푸터 바로가기</a>
+        </div>
+        <!-- E:skip_navi -->
+        <!-- S:header -->
+        <header id="header">
+            <div class="container">
+                <button class="menu">
+                    <i class='bar'></i>
+                    <i class='bar'></i>
+                    <i class='bar'></i>
+                    메뉴토글</button>
+
+                <h1>
+                    <a href="">태양광발전 모니터링 시스템</a>
+                </h1>
+
+                <!-- S:main_menu -->
+                <nav id="main-menu">
+
+                    <ul>
+                        <li>
+                            <h3>
+                                <a href="#">
+                                    <i class='xi xi-dashboard-o'></i>
+                                    <span>발전소 모니터링</span></a>
+                            </h3>
+
+                        </li>
+                        <li >
+                            <h3>
+                                <a href="#">
+                                    <i class='xi xi-sitemap'></i>
+                                    <span>발전소 보고서</span></a>
+                            </h3>
+                        </li>
+
+                    </ul>
+
+                </nav>
+                <!-- E:main_menu -->
+                <p class="welcome">
+                    <strong>관리자</strong>님 환영합니다.
+                </p>
+                <button class="logout">
+                    <i class='xi xi-log-out'></i>LOGOUT</button>
+            </div>
+        </header>
+        <!-- E:header -->
+        <!-- S:mainContent -->
+
+
+        <div id="content">
+
+            <section class="view">
+                <div class="container">
+
+                    <h2 class="sTitle">
+                        <i class='xi xi-dashboard-o'></i>신재생에너지 기간별 발전량(연도별)</h2>
+
+                    <nav class="navigation" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item icon">
+                                <a href="#">
+                                    <i class='xi xi-home-o'></i>Home</a>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a href="#">발전소 보고서</a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">신재생에너지 기간별 발전량(연도별)</li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="contentsArea">
+                    <div class="container">
+                        <!-- 검색폼 -->
+                        <div class="row">
+                            <div class="col-xl-12" area-label="search form">
+                                <h3 class="sr-only">검색폼</h3>
+                                <div class="search">
+
+                                    <form>
+                                        <div class="form-row">
+                                            <label for="inlineFormCustomSelect" class="col-xl-1 col-form-label">발전소 선택</label>
+                                            <div class="col-xl-2">
+                                                <select class="custom-select mr-xl-2 mb-2 mb-xl-0" id="inlineFormCustomSelect">
+                                                    <option selected="selected">수월봉 발전소</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+
+
+                                            <label for="inputDate" class="col-xl-1 offset-xl-1 col-form-label">기준일자</label>
+                                            <div class="col-xl-2 mr-xl-2 mb-2 mb-xl-0">
+                                                    <input type="date" class="form-control" id="inputDate" placeholder="기준일자">
+                                            </div>
+
+
+                                            <div class="col-xl-1">
+                                                <button type="submit" class="btn btn-secondary btn-block btn-xl-inline">검색</button>
+                                            </div>
+
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--// 검색폼-->
+
+
+                        <div class="alert alert-info" role="alert">
+                                기준시간 : 2018년 11월 12일 11시
+                              </div>
+
+
+                        <div class="row">
+
+
+                            <div class="col-xl-6">
+                                <div class="bnWidget">
+                                    <h4 class="widgetTitle bn">
+                                        인포태양광
+
+                                        <small>
+                                            날씨 : 맑음
+                                        </small>
+                                    </h4>
+                                    <div class="conLeft">
+                                        <div class="chart">
+                                            <!-- 챠트영역 -->
+
+
+                                        </div>
+                                        <ul>
+                                            <li>발전량 <strong>345kw</strong></li>
+                                            <li>발전량 <strong>345kw</strong></li>
+                                            <li>발전량 <strong>345kw</strong></li>
+                                            <li>발전량 <strong>345kw</strong></li>
+                                        </ul>
+                                    </div>
+                                    <div class="conRight">
+                                        <h5>인버터 상태</h5>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>번호</th>
+                                                    <th>DC V</th>
+                                                    <th>AC V</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1번</td>
+                                                    <td><a class="normal" href="#">12</a></td>
+                                                    <td><a class="normal" href="#">240</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2번</td>
+                                                    <td><a class="warning" href="#">12</a></td>
+                                                    <td><a class="normal" href="#">240</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3번</td>
+                                                    <td><a class="danger" href="#">12</a></td>
+                                                    <td><a class="normal" href="#">240</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-xl-6">
+                                <div class="bnWidget">
+                                    <h4 class="widgetTitle bn">
+                                        인포태양광
+
+                                        <small>
+                                            날씨 : 맑음
+                                        </small>
+                                    </h4>
+                                    <div class="conLeft">
+                                        <div class="chart">
+                                            <!-- 챠트영역 -->
+
+
+                                        </div>
+                                        <ul>
+                                            <li>발전량 <strong>345kw</strong></li>
+                                            <li>발전량 <strong>345kw</strong></li>
+                                            <li>발전량 <strong>345kw</strong></li>
+                                            <li>발전량 <strong>345kw</strong></li>
+                                        </ul>
+                                    </div>
+                                    <div class="conRight">
+                                        <h5>인버터 상태</h5>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>번호</th>
+                                                    <th>DC V</th>
+                                                    <th>AC V</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1번</td>
+                                                    <td><a class="normal" href="#">12</a></td>
+                                                    <td><a class="normal" href="#">240</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2번</td>
+                                                    <td><a class="warning" href="#">12</a></td>
+                                                    <td><a class="normal" href="#">240</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3번</td>
+                                                    <td><a class="danger" href="#">12</a></td>
+                                                    <td><a class="normal" href="#">240</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="row">
+
+
+                            <div class="col-xl-12">
+                                <div class="bnConsole">
+                                    <p>[System] 명명야옹야옹</p>
+                                    <p class="warning">[warning] 명명야옹야옹</p>
+                                    <p class="danger">[danger] 명명야옹야옹</p>
+                                    <p>[System] 명명야옹야옹</p>
+                                    <p>[System] 명명야옹야옹</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+        <!-- E:mainContent -->
+
+        <footer id="footer">
+            <div class="container">
+                © INFOMIND
+                </div>
+        </footer>
+    </body>
+
+</html>
