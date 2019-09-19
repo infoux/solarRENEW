@@ -11202,7 +11202,14 @@ body.cmsMain div#content div.contentsArea .bnWidget h4.widgetTitle small {
   bottom: 0;
   display: block;
   text-align: right;
-  padding: 1.07143rem;
+  padding: 1.07143rem 3.21429rem 1.07143rem 1.07143rem;
+}
+
+body.cmsMain div#content div.contentsArea .bnWidget h4.widgetTitle small i {
+  position: absolute;
+  right: 0.71429rem;
+  top: 0.57143rem;
+  font-size: 2.14286rem;
 }
 
 body.cmsMain div#content div.contentsArea .bnWidget div.conLeft {
@@ -11280,6 +11287,7 @@ body.cmsMain div#content div.contentsArea .bnWidget div.conRight table th {
   margin: 0;
   padding: 0.71429rem;
   background: #000;
+  font-size: 0.85714rem;
 }
 
 body.cmsMain div#content div.contentsArea .bnWidget div.conRight table td {
@@ -11288,7 +11296,7 @@ body.cmsMain div#content div.contentsArea .bnWidget div.conRight table td {
 }
 
 body.cmsMain div#content div.contentsArea .bnWidget div.conRight table td a {
-  display: inline-block;
+  display: block;
   margin: 0.35714rem;
   padding: 0.71429rem;
   border-radius: 0.42857rem;
@@ -11344,6 +11352,12 @@ body.cmsMain div#content div.contentsArea .bnConsole p.warning {
 
 body.cmsMain div#content div.contentsArea .bnConsole p.danger {
   color: #dc3545;
+}
+
+body.cmsMain div#content div.contentsArea .bnConsole button {
+  position: absolute;
+  right: 0.71429rem;
+  top: 0.71429rem;
 }
 
 body.cmsMain div#content div.contentsArea .search {

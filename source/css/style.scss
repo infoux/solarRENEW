@@ -586,7 +586,14 @@ body {
                             bottom:0;
                             display:block;
                             text-align:right;
-                            padding:rem(15px);
+                            padding:rem(15px 45px 15px 15px);
+
+                            i {
+                                position:absolute;
+                                right:rem(10px);
+                                top:rem(8px);
+                                font-size:rem(30px);
+                            }
                         }
                     }
 
@@ -656,6 +663,7 @@ body {
                                 text-align:center;
                                 @include pmz(rem(10px), 0);
                                 background:#000;
+                                font-size:rem(12px);
                             }
 
                             td {
@@ -663,7 +671,7 @@ body {
                                 border-bottom:1px solid rgba($black, 0.3);
 
                                 a {
-                                    display:inline-block;
+                                    display:block;
                                     @include pmz(rem(10px), rem(5px));
                                     border-radius:rem(6px);
                                     background:#000;
@@ -725,6 +733,12 @@ body {
                         &.danger {
                             color:$danger;
                         }
+                    }
+
+                    button {
+                        position:absolute;
+                        right:rem(10px);
+                        top:rem(10px);
                     }
 
                 }
