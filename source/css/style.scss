@@ -111,6 +111,10 @@ body {
         }
     }
 
+    .con-center {
+        text-align:center;
+    }
+
     /* login */
     &.cmsLogin {
         padding:rem(20px);
@@ -367,6 +371,18 @@ body {
                     display: inline-block;
                     font-size: 14px;
                     @include pmz(0 20px, 0);
+
+                    i {
+                        position:relative;
+                        top:4px;
+                        margin-right:4px;
+                        color:$main-color;
+                        font-size:18px;
+                    }
+    
+                    strong {
+                        color:$main-color;;
+                    }
                 }
 
             }
@@ -606,7 +622,7 @@ body {
                             display:inline-block;
                             vertical-align:top;
                             width:60%;
-                            min-height:203px;
+                            min-height:301px;
                         }
 
 
@@ -637,7 +653,7 @@ body {
                             vertical-align:top;
                             background:rgba($black, 0.6);
                             width:40%;
-                            min-height:203px;
+                            min-height:301px;
                         }
 
                         h5 {
@@ -701,7 +717,14 @@ body {
                     }
                 }
 
-                .bnConsole {
+
+                button.bnConsole {
+                    position:absolute;
+                    right:rem(42px);
+                    top:rem(10px);
+                }
+
+                div.bnConsole {
                     position:relative;
                     display:inline-block;
                     width:100%;
@@ -726,7 +749,7 @@ body {
                         @include pmz(0, rem(0 0 5px));
                         color:#999;
 
-                        &.warning {
+                        &.warning { 
                             color:$warning;
                         }
 
@@ -734,13 +757,6 @@ body {
                             color:$danger;
                         }
                     }
-
-                    button {
-                        position:absolute;
-                        right:rem(10px);
-                        top:rem(10px);
-                    }
-
                 }
 
 

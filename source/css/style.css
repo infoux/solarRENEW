@@ -10681,6 +10681,10 @@ body .container {
   }
 }
 
+body .con-center {
+  text-align: center;
+}
+
 body.cmsLogin {
   padding: 1.42857rem;
   background: #dee2e6;
@@ -10956,6 +10960,16 @@ body.cmsMain header p.welcome {
     margin: 0;
     padding: 0 20px;
   }
+  body.cmsMain header p.welcome i {
+    position: relative;
+    top: 4px;
+    margin-right: 4px;
+    color: #005de1;
+    font-size: 18px;
+  }
+  body.cmsMain header p.welcome strong {
+    color: #005de1;
+  }
 }
 
 body.cmsMain header button.logout {
@@ -11222,7 +11236,7 @@ body.cmsMain div#content div.contentsArea .bnWidget div.conLeft {
     display: inline-block;
     vertical-align: top;
     width: 60%;
-    min-height: 203px;
+    min-height: 301px;
   }
 }
 
@@ -11256,7 +11270,7 @@ body.cmsMain div#content div.contentsArea .bnWidget div.conRight {
     vertical-align: top;
     background: rgba(0, 0, 0, 0.6);
     width: 40%;
-    min-height: 203px;
+    min-height: 301px;
   }
 }
 
@@ -11317,7 +11331,13 @@ body.cmsMain div#content div.contentsArea .bnWidget div.conRight table td a.dang
   background: #dc3545;
 }
 
-body.cmsMain div#content div.contentsArea .bnConsole {
+body.cmsMain div#content div.contentsArea button.bnConsole {
+  position: absolute;
+  right: 3rem;
+  top: 0.71429rem;
+}
+
+body.cmsMain div#content div.contentsArea div.bnConsole {
   position: relative;
   display: inline-block;
   width: 100%;
@@ -11331,33 +11351,27 @@ body.cmsMain div#content div.contentsArea .bnConsole {
   overflow-y: scroll;
 }
 
-body.cmsMain div#content div.contentsArea .bnConsole::-webkit-scrollbar {
+body.cmsMain div#content div.contentsArea div.bnConsole::-webkit-scrollbar {
   width: 1.14286rem;
   background: rgba(255, 255, 255, 0.3);
 }
 
-body.cmsMain div#content div.contentsArea .bnConsole::-webkit-scrollbar-thumb {
+body.cmsMain div#content div.contentsArea div.bnConsole::-webkit-scrollbar-thumb {
   background: rgba(0, 0, 0, 0.3);
 }
 
-body.cmsMain div#content div.contentsArea .bnConsole p {
+body.cmsMain div#content div.contentsArea div.bnConsole p {
   margin: 0 0 0.35714rem;
   padding: 0;
   color: #999;
 }
 
-body.cmsMain div#content div.contentsArea .bnConsole p.warning {
+body.cmsMain div#content div.contentsArea div.bnConsole p.warning {
   color: #ffc107;
 }
 
-body.cmsMain div#content div.contentsArea .bnConsole p.danger {
+body.cmsMain div#content div.contentsArea div.bnConsole p.danger {
   color: #dc3545;
-}
-
-body.cmsMain div#content div.contentsArea .bnConsole button {
-  position: absolute;
-  right: 0.71429rem;
-  top: 0.71429rem;
 }
 
 body.cmsMain div#content div.contentsArea .search {
